@@ -1,1 +1,2 @@
-This program start 
+public: 
+  存放公用的静态资源

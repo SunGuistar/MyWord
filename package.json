@@ -4,7 +4,7 @@
   "description": "a boy's dream",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack --config ./scripts/config/webpack.dev.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./scripts/config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./scripts/config/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npm run lint-eslint && npm run lint-stylelint",
