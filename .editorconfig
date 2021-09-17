@@ -1,0 +1,23 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+# 缩进风格 tab 和 space
+indent_style = space
+# 缩进大小（单位空格） 1-8
+indent_size = 2
+# 编码格式
+charset = utf-8
+# 去除多余的空格
+trim_trailing_whitespace = true
+# 在尾部插入一行
+insert_final_newline = true
+# 换行符
+end_of_line = lf
+
+# markdown 语法中，想要换行需要在上一行多打 2 个以上的空格，为了不影响该语法，故 .md 文件中把去除多余空格关掉了。
+[*.md]
+trim_trailing_whitespace = false
+
