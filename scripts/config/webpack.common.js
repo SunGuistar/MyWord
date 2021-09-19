@@ -77,7 +77,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          context: resolve(PROJECT_PATH, './public'),
+          context: resolve(PROJECT_PATH, './public/resources'),
           from: '*',
           to: resolve(PROJECT_PATH, './dist'),
           toType: 'dir',

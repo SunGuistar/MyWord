@@ -10,15 +10,11 @@
     "@babel/preset-react",
     "@babel/preset-typescript"
   ],
-  "plungins": [
+  "plugins": [
     [
       "@babel/plugin-transform-runtime",
       {
-        "corejs": {
-          "version": 3,
-          "proposals": true
-        },
-        "useESModules": true
+        "corejs": 3
       }
     ]
   ]

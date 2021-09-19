@@ -1,3 +1,6 @@
+2021.09.18
+  Current Progress： small 3/7, big 1/2
+  add babel
 2021.09.17
   Current Progress： small 2/7, big 1/2
   continue, some package's version needs to reduce;babel is a necessary package to add
