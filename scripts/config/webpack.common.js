@@ -1,6 +1,7 @@
 const { resolve } = require('path')
 const { isDev, PROJECT_PATH } = require('../constant')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const getCssLoaders = (importLoaders) => [
   'style-loader',
@@ -72,6 +73,16 @@ module.exports = {
             minifyURLs: true,
             useShortDoctype: true,
           },
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          context: resolve(PROJECT_PATH, './public'),
+          from: '*',
+          to: resolve(PROJECT_PATH, './dist'),
+          toType: 'dir',
+        },
+      ],
     }),
   ],
   module: {
