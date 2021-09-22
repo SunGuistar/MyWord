@@ -2,7 +2,7 @@ const OFF = 0
 const WARN = 1
 const ERROR = 2
 
-module.exports = {
+export default {
   env: {
     browser: true,
     es2020: true,
@@ -16,9 +16,6 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
-    'prettier/unicorn',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
