@@ -2,7 +2,7 @@ const OFF = 0
 const WARN = 1
 const ERROR = 2
 
-export default {
+module.exports = {
   env: {
     browser: true,
     es2020: true,
@@ -33,7 +33,7 @@ export default {
       typescript: {},
     },
   },
-  plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
+  plugins: ['react', 'prettier', 'react-hooks', '@typescript-eslint'],
   rules: {
     // 具体添加的其他规则大家可查看我的 github 查看
     // https://github.com/vortesnail/react-ts-quick-starter/blob/master/.eslintrc.js

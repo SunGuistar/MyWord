@@ -1,3 +1,6 @@
+2020.09.22
+  hard-source-webpack-plugin only valid in webpack4,and webpack5 is invalid.(Here is the reason:https://github.com/mzgoddard/hard-source-webpack-plugin/issues/546)
+  In this issue, someone provide a solution for webpack5 that how to improve the speed when program execute the secondary compile.
 2021.09.18
   Current Progress： small 3/7, big 1/2
   add babel
