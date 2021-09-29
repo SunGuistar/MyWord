@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className='app'>
-      以梦为马
+      理想国
     </div>
   )
 }
