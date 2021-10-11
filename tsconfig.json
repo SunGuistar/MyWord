@@ -8,6 +8,8 @@
     "jsx": "react",                           // 在 .tsx 文件里支持 JSX
     "isolatedModules": true,
     "strict": true,                           // 启用所有严格类型检查选项
+    "downlevelIteration": true,               // 解构中为可迭代项提供支持
+    "noImplicitThis": true,                   //不对this进行类型检查
 
     // 模块解析选项
     "moduleResolution": "node",               // 指定模块解析策略
@@ -29,6 +31,7 @@
     "skipLibCheck": true,                     // 忽略所有的声明文件（ *.d.ts）的类型检查
     "allowSyntheticDefaultImports": true,     // 允许从没有设置默认导出的模块中默认导入
     "noEmit": true														// 只想使用tsc的类型检查作为函数时（当其他工具（例如Babel实际编译）时）使用它
+
   },
   "exclude": ["node_modules"]
 }
