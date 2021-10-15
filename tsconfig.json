@@ -8,7 +8,7 @@
     "jsx": "react",                           // 在 .tsx 文件里支持 JSX
     "isolatedModules": true,
     "strict": true,                           // 启用所有严格类型检查选项
-    "downlevelIteration": true,               // 解构中为可迭代项提供支持
+    "downlevelIteration": true,               
     "noImplicitThis": true,                   //不对this进行类型检查
 
     // 模块解析选项

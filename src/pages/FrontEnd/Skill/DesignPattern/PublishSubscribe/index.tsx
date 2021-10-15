@@ -12,7 +12,7 @@ import { message } from 'antd'
 
 export default () => {
   /**
-   * 发布订阅类
+   * 简单发布订阅类
    */
   class EventEmit {
     // 消息队列
@@ -40,6 +40,17 @@ export default () => {
           eventListener(...args)
         })
       }
+    }
+    /**
+     * 取消订阅
+     * @param name
+     * @param callback
+     */
+    off = (name:string) => {
+      if(this.events[name]) {
+        delete this.events[name]
+      }
+
     }
   }
   const event = new EventEmit()
