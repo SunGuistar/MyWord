@@ -9,19 +9,42 @@ export const routerConfig = (app: any) => ({
   component: dynamicWrapper(app, [],() => {}),
   children: [
     {
-      path: 'react',
-      name: 'React',
-      component: dynamicWrapper(app, [], () => {}),
+      path: 'frontEnd',
+      name: '前端',
+      component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd')),
       children: [
         {
-          path: 'hooks',
-          name: 'Hooks',
-          component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd/React/Hooks/index'))
-        }
+          path: 'react',
+          name: 'React',
+          component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd/React')),
+          children: [
+            {
+              path: 'hooks',
+              name: 'Hooks',
+              component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd/React/Hooks'))
+            }
+          ]
+        },
+        {
+          path: 'skill',
+          name: '技巧',
+          component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd/Skill')),
+          children: [
+            {
+              path: 'designPattern',
+              name: '设计模式',
+              component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd/Skill/DesignPattern'))
+            },
+            {
+              path: 'es6',
+              name: 'ES6',
+              component: dynamicWrapper(app, [], () => import('Src/pages/FrontEnd/Skill/ES6'))
+            }
+          ]
+        },
       ]
-    }
+    },
   ]
-
 })
 
 

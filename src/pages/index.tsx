@@ -1,5 +1,5 @@
 /**
- * ES6的一些使用技巧
+ * 主目录
  */
 import React from 'react'
 

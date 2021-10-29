@@ -65,6 +65,8 @@
     "copy-webpack-plugin": "^9.0.1",
     "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
+    "dva-immer": "^1.0.0",
+    "dva-loading": "^3.0.22",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
